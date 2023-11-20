@@ -1,0 +1,18 @@
+1 下载插件 tmux-resurrect
+mkdir ~/.tmux
+cd ~/.tmux
+git clone https://github.com/tmux-plugins/tmux-resurrect.git
+
+2 配置文件
+vim ~/.tmux.conf
+run-shell ~/.tmux/tmux-resurrect/resurrect.tmux
+
+3 启动配置
+tmux source ~/.tmux.conf
+
+4 使用
+    前缀:ctrl+b + 保存:ctrl+s
+    Tmux environment saved!
+
+    前缀:ctrl+b + 恢复:ctrl+r
+    Tmux restore complete!
